@@ -1,7 +1,7 @@
 # INTEGRAT-reading-the-mind-of-the-AI-robot
 EXECUTIVVE SUMMARY
 
-The INTEGRAT "phoneme recognizer" executable runs on Windows, and the source code is also provided. The example data can be used to train an artificial intelligence robot to recognize a set of four phonemes. THe user can experiment with a variety of AI parameters, and work those parameters backwards to understand the internal workings of the automated classifier, reading the mind of the robot so to speak. 
+The INTEGRAT "phoneme recognizer" executable runs on Windows, and the source code is also provided. The example data can be used to train an artificial intelligence robot to recognize a set of four phonemes. The user can experiment with a variety of AI parameters, and work those parameters backwards to understand the internal workings of the automated classifier, reading the mind of the robot so to speak. 
 
 DETAILS
 
@@ -36,10 +36,14 @@ Independent Claim 14 – Use that same user interface to let the human expert ma
 Independent Claim 25 – Let the human expert see if the features contain enough information to be used as a codec. In other words, if we can transform the original data into a set of features, we should be able to create original data (somewhat distorted and simplified perhaps) from the features – with sufficient information for a human expert to use that to identify the correct decision. 
 
 US Patent 5749066 – 
-   Question: IS THE TRAINING DATA GOOD AND CAN THE CLASSIFIER BE USED AS A CODEC?
+
+Question: IS THE TRAINING DATA GOOD AND CAN THE CLASSIFIER BE USED AS A CODEC?
+
 AI robots can be finicky about the actual examples selected to be used for training. Giving too many of one kind of example can have a negative impact on the resulting decision maker, as can the introduction of misleading data examples (either accidentally or maliciously). Sometimes, a training set can be obviously bad, and other times, only after the AI is trained, can the human expert see that something has gone wrong.
-   Independent Claims 1 and 7 - Provide a friendly user interface to present all stages of creating the training set to the eyes and ears of the human expert to see if they can spot any problems noted above.
-   Independent Claim 3 – Let the human expert see if the AI can be used as a codec. In other words, if the AI can identify the correct decision, then we can work backwards through the AI layers to recreate an exemplary feature set. We can then create the original data (somewhat distorted and simplified perhaps) from those features – with sufficient information for a human expert to use that to identify the correct decision.
+
+Independent Claims 1 and 7 - Provide a friendly user interface to present all stages of creating the training set to the eyes and ears of the human expert to see if they can spot any problems noted above.
+
+Independent Claim 3 – Let the human expert see if the AI can be used as a codec. In other words, if the AI can identify the correct decision, then we can work backwards through the AI layers to recreate an exemplary feature set. We can then create the original data (somewhat distorted and simplified perhaps) from those features – with sufficient information for a human expert to use that to identify the correct decision.
 
 US Patent 5864803
 
