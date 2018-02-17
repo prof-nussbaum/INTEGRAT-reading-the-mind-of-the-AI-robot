@@ -1,0 +1,102 @@
+# Project: Integrat
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = Integrat_private.res
+OBJ      = CODE.o CODETOOL.o CONBOX.o DIALOG.o DRAW.o FFT.o FILE.o FILEBOX.o GET_NUM.o ID.o ID2BOX.o IDBOX.o LPC.o MAININ.o MFILE.o NULLFUNC.o PLAY.o RESIZEBO.o SEGBOX.o SEGMENT.o TRANBOX.o TRANSFOR.o UNTRANSF.o WAVID.o $(RES)
+LINKOBJ  = CODE.o CODETOOL.o CONBOX.o DIALOG.o DRAW.o FFT.o FILE.o FILEBOX.o GET_NUM.o ID.o ID2BOX.o IDBOX.o LPC.o MAININ.o MFILE.o NULLFUNC.o PLAY.o RESIZEBO.o SEGBOX.o SEGMENT.o TRANBOX.o TRANSFOR.o UNTRANSF.o WAVID.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows "../../../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib/libwinmm.a" -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Integrat.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3 -fpermissive
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+CODE.o: CODE.C
+	$(CC) -c CODE.C -o CODE.o $(CFLAGS)
+
+CODETOOL.o: CODETOOL.C
+	$(CC) -c CODETOOL.C -o CODETOOL.o $(CFLAGS)
+
+CONBOX.o: CONBOX.C
+	$(CC) -c CONBOX.C -o CONBOX.o $(CFLAGS)
+
+DIALOG.o: DIALOG.C
+	$(CC) -c DIALOG.C -o DIALOG.o $(CFLAGS)
+
+DRAW.o: DRAW.C
+	$(CC) -c DRAW.C -o DRAW.o $(CFLAGS)
+
+FFT.o: FFT.C
+	$(CC) -c FFT.C -o FFT.o $(CFLAGS)
+
+FILE.o: FILE.C
+	$(CC) -c FILE.C -o FILE.o $(CFLAGS)
+
+FILEBOX.o: FILEBOX.C
+	$(CC) -c FILEBOX.C -o FILEBOX.o $(CFLAGS)
+
+GET_NUM.o: GET_NUM.C
+	$(CC) -c GET_NUM.C -o GET_NUM.o $(CFLAGS)
+
+ID.o: ID.C
+	$(CC) -c ID.C -o ID.o $(CFLAGS)
+
+ID2BOX.o: ID2BOX.C
+	$(CC) -c ID2BOX.C -o ID2BOX.o $(CFLAGS)
+
+IDBOX.o: IDBOX.C
+	$(CC) -c IDBOX.C -o IDBOX.o $(CFLAGS)
+
+LPC.o: LPC.C
+	$(CC) -c LPC.C -o LPC.o $(CFLAGS)
+
+MAININ.o: MAININ.C
+	$(CC) -c MAININ.C -o MAININ.o $(CFLAGS)
+
+MFILE.o: MFILE.C
+	$(CC) -c MFILE.C -o MFILE.o $(CFLAGS)
+
+NULLFUNC.o: NULLFUNC.C
+	$(CC) -c NULLFUNC.C -o NULLFUNC.o $(CFLAGS)
+
+PLAY.o: PLAY.C
+	$(CC) -c PLAY.C -o PLAY.o $(CFLAGS)
+
+RESIZEBO.o: RESIZEBO.C
+	$(CC) -c RESIZEBO.C -o RESIZEBO.o $(CFLAGS)
+
+SEGBOX.o: SEGBOX.C
+	$(CC) -c SEGBOX.C -o SEGBOX.o $(CFLAGS)
+
+SEGMENT.o: SEGMENT.C
+	$(CC) -c SEGMENT.C -o SEGMENT.o $(CFLAGS)
+
+TRANBOX.o: TRANBOX.C
+	$(CC) -c TRANBOX.C -o TRANBOX.o $(CFLAGS)
+
+TRANSFOR.o: TRANSFOR.C
+	$(CC) -c TRANSFOR.C -o TRANSFOR.o $(CFLAGS)
+
+UNTRANSF.o: UNTRANSF.C
+	$(CC) -c UNTRANSF.C -o UNTRANSF.o $(CFLAGS)
+
+WAVID.o: WAVID.C
+	$(CC) -c WAVID.C -o WAVID.o $(CFLAGS)
+
+Integrat_private.res: Integrat_private.rc INTEGRAT.RC
+	$(WINDRES) -i Integrat_private.rc --input-format=rc -o Integrat_private.res -O coff 
+
