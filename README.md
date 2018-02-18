@@ -3,6 +3,8 @@ EXECUTIVE SUMMARY
 
 The INTEGRAT "phoneme recognizer" executable runs on Windows, and the source code is also provided. The example data can be used to train an artificial intelligence robot to recognize a set of four phonemes. The user can experiment with a variety of AI parameters, and work those parameters backwards to understand the internal workings of the automated classifier, reading the mind of the robot so to speak. 
 
+Here is a YouTube demonstration...https://youtu.be/ElCA72b_jMM
+
 DETAILS
 
 Reading the Robot Mind
