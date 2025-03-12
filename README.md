@@ -23,7 +23,7 @@ Recently some old research of mine has been getting increased attention by engin
 
 To make this research more easily accessible I am releasing the software for Windows, a short YouTube video explaining how to use the software, and the source code on GitHub. The software recognizes phonemes, basic elements of human speech. The feature extraction is speech specific, but the AI algorithms are reusable. Both neural network (back propagation and self-organizing maps) as well as simpler centroid based classifiers (unsupervised and supervised competitive learning) can be used for bio-medical signal analysis, stock market prediction, or anything in between. In all cases, human experts are the key to making the best AI decisions, and INTEGRAT is designed to help that human expert analyze that robot, as well as the data used to train, it in a user friendly way. 
 
-Below is a list of the questions the research seeks to answer. Aside: As the Patent Liaison to The United States for the Swedish company Ericsson, I learned how to organizing ideas into intellectual property terms, so for even more details, the reader is directed to the specific patent and independent claims listed below, all publically available at www.USPTO.gov.
+Below is a list of the questions the research seeks to answer. Aside: As the Patent Liaison to The United States for the Swedish company Ericsson, I learned how to organize ideas into intellectual property terms, so for even more details, the reader is directed to the specific patent and independent claims listed below, all publically available at www.USPTO.gov.
 
 US Patent 5809462 – 
 
